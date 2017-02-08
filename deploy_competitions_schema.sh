@@ -1,14 +1,18 @@
 #!/bin/bash
 
 ## Create user/schema with tablespace as DB admin
-echo "Enter user name, followed by [ENTER]: "
-read username
+read -p "Enter user name, followed by [ENTER]: " username
 
-echo "Enter user password (not visible), followed by [ENTER]: "
-read -s password
+read  -s -p "Enter user password (not visible), followed by [ENTER]: " password
+echo
 
-echo "Enter tablespace, followed by [ENTER]: "
-read tablespace
+read -p "Enter tablespace, followed by [ENTER]: " tablespace
 
 echo "Creating user/schema and tablespace..."
-sqlplus system @as_admin/install_user_tablespace.sql ${username} ${password} ${tablespace}
+
+echo "You will be prompted system passwd to continue..."
+read -s -p "Enter password: " oracle_admin
+echo exit | sqlplus -S system/${oracle_admin} @as_admin/install_user_tablespace.sql ${username} ${password} ${tablespace}
+
+echo "Creating tables as $username..."
+
