@@ -7,9 +7,3 @@ CREATE TABLE ORG (
   EmployeeCount NUMBER(5)    NOT NULL,
   OrgTeamFK     NUMBER(10)
 ) TABLESPACE competitions;
-
-ALTER TABLE ORG
-  ADD (
-  CONSTRAINT country_fk FOREIGN KEY (CountryFK) REFERENCES COUNTRY (CountryPK),
-  CONSTRAINT org_team_fk FOREIGN KEY (OrgTeamFK) REFERENCES ORG_TEAM (OrgTeamPK)
-  );

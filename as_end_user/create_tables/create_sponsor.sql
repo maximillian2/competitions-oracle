@@ -9,10 +9,3 @@ CREATE TABLE SPONSOR (
   ResourcesCount NUMBER(6)    NOT NULL CHECK (ResourcesCount > 0),
   Currency       VARCHAR2(5)  NOT NULL
 ) TABLESPACE competitions;
-
-ALTER TABLE SPONSOR
-  ADD (
-  CONSTRAINT country_fk FOREIGN KEY (CountryFK) REFERENCES COUNTRY (CountryPK),
-  CONSTRAINT comp_fk FOREIGN KEY (CompFK) REFERENCES COMP (CompPK),
-  CONSTRAINT consponsortype_fk FOREIGN KEY (SponsorTypeFK) REFERENCES SPONSOR_TYPE (SponsorTypePK)
-  );
