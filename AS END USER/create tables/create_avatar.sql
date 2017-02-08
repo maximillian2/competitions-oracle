@@ -1,0 +1,6 @@
+-- Table "Avatar"
+CREATE TABLE AVATAR (
+  AvatarPK NUMBER(10) PRIMARY KEY,
+  Title    VARCHAR2(20)  NOT NULL,
+  URL      VARCHAR2(100) NOT NULL
+) TABLESPACE competitions;
