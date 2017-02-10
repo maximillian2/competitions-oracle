@@ -14,4 +14,5 @@ DEFAULT TABLESPACE &3;
 -- Allow user to log in and create tables (including insert, delete, update)
 GRANT CREATE SESSION TO &1;
 GRANT CREATE TABLE TO &1;
+GRANT CREATE SEQUENCE TO &1;
 GRANT UNLIMITED TABLESPACE TO &1;
