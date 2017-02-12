@@ -1,0 +1,17 @@
+INSERT INTO EQUIP_TYPE VALUES(1, 'drive technology', 'Yards writing tiger bin herein');
+INSERT INTO EQUIP_TYPE VALUES(2, 'automation technology', 'Speech confidence bedrooms credit oxygen');
+INSERT INTO EQUIP_TYPE VALUES(3, 'process automation', 'Lincoln tm video built concerning');
+INSERT INTO EQUIP_TYPE VALUES(4, 'sensors and encoders', 'So actors truck franklin sr');
+INSERT INTO EQUIP_TYPE VALUES(5, 'test and measurement', 'Kevin connected hardcover enjoy dimension');
+INSERT INTO EQUIP_TYPE VALUES(6, 'low voltage products', 'Ideas instead achieved music holder');
+INSERT INTO EQUIP_TYPE VALUES(7, 'terminal system', 'Decor blvd raw painting laboratory');
+INSERT INTO EQUIP_TYPE VALUES(8, 'power supplies and transformers', 'Elizabeth dawn diamond manufacturing during');
+INSERT INTO EQUIP_TYPE VALUES(9, 'uninterrupted power supply', 'Rugby social drum same exp');
+INSERT INTO EQUIP_TYPE VALUES(10, 'electric energy control and calculation', 'Reed movement session temporary paintings');
+INSERT INTO EQUIP_TYPE VALUES(11, 'explosion-proof equipment', 'Commonly packard tissue ot acting');
+INSERT INTO EQUIP_TYPE VALUES(12, 'cables, wires, ducts, tools', 'Attended moving pick box processed');
+INSERT INTO EQUIP_TYPE VALUES(13, 'built-in electrical', 'Drugs static nine joe drinking');
+INSERT INTO EQUIP_TYPE VALUES(14, 'pneumatics', 'Sponsored guinea dimensional classical muscle');
+INSERT INTO EQUIP_TYPE VALUES(15, 'building automation and safety', 'Compare desktops enough directory dublin');
+INSERT INTO EQUIP_TYPE VALUES(16, 'lighting engineering', 'Recent birmingham bargains agents bondage');
+INSERT INTO EQUIP_TYPE VALUES(17, 'reactive power compensation', 'Lets bay pl oxford pressure');

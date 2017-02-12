@@ -1,5 +1,5 @@
-DEFINE username='';
-DEFINE tablespacename='';
+DEFINE username='maxi';
+DEFINE tablespacename='compet';
 
 -- DELETE USER
 DROP user &&username CASCADE;

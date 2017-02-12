@@ -9,5 +9,5 @@ CREATE TABLE PART (
   CompFK    NUMBER(10),
   Email     VARCHAR2(70),
   Birthday  DATE,
-  ImageFK   NUMBER(10)
+  ImageFK   NUMBER(10) UNIQUE
 ) TABLESPACE competitions;
