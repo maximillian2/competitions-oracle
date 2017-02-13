@@ -30,7 +30,7 @@ Developed using docker image by [@sath89](https://hub.docker.com/r/sath89/oracle
 
 5. Launch install script using instance name from previous command:
 
-  `docker exec -it <docker image name> /bin/bash install_competitions_schema.sh`
+  `docker exec -it <docker image name> /bin/bash -c 'cd /mnt; install_competitions_schema.sh'`
 
 6. Enter needed information about new user.
 
