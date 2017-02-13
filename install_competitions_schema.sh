@@ -1,6 +1,6 @@
 #!/bin/bash
-
 ## Automated deployment of database with user/schema creation.
+## Supports uninstall option with -un / --uninstall argument
 
 admin_install_path='as_admin/install_user_tablespace.sql'
 admin_uninstall_path='as_admin/uninstall_user_tablespace.sql'
@@ -14,7 +14,7 @@ function getOracleAdminPassword() {
     echo ${oracle_admin}
 }
 
-# uninstall option support
+## uninstall option support
 if [ "$1" == "-un" -o "$1" == "--uninstall" ];
 then
     password=`getOracleAdminPassword`; echo
@@ -26,16 +26,16 @@ then
     exit 0
 fi
 
-# Create user/schema with tablespace as DB admin
+## Create user/schema with tablespace as DB admin
 read -p "Enter user name, followed by [ENTER]: " username
 read  -s -p "Enter user password (not visible), followed by [ENTER]: " password; echo
 read -p "Enter tablespace, followed by [ENTER]: " tablespace
 
 echo "Creating user/schema and tablespace..."
-
 oracle_admin=`getOracleAdminPassword`; echo
 echo exit | sqlplus -S system/${oracle_admin} @${admin_install_path} ${username} ${password} ${tablespace}
 
+## Set newly created user and tablespace names in uninstall script
 sed -i "${username_line}s/''/'${username}'/g" ${admin_uninstall_path}
 sed -i "${tablespacename_line}s/''/'${tablespace}'/g" ${admin_uninstall_path}
 
