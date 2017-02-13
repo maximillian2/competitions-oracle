@@ -6,7 +6,7 @@ Developed using docker image by [@sath89](https://hub.docker.com/r/sath89/oracle
 
 ## Install
 
-### With Docker
+### Via Docker
 1. Clone repository:
 
   `git clone https://github.com/maximillian2/competitions-oracle.git`
@@ -19,10 +19,10 @@ Developed using docker image by [@sath89](https://hub.docker.com/r/sath89/oracle
 
 3. Setup the database data storage (change __/my/oracle/data/__ to your database directory):
 
-  ```
-  docker run -d -p 8080:8080 -p 1521:1521 -v /my/oracle/data:/u01/app/oracle
+```
+  docker run -d -p 8080:8080 -p 1521:1521 -v /my/oracle/data:/u01/app/oracle \
   -v `pwd`/:/mnt/ sath89/oracle-xe-11g
-  ```
+```
 
 4. Get docker processes:
 
@@ -34,7 +34,7 @@ Developed using docker image by [@sath89](https://hub.docker.com/r/sath89/oracle
 
 6. Enter needed information about new user.
 
-### Without Docker (assuming you have running oracle database instance locally)
+### Local Oracle instance
 
 1. Clone repository:
 
