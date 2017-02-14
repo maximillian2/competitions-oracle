@@ -4,6 +4,8 @@ Oracle Database (xe-11g) schema with fake data to play with out-the-box.
 
 Developed using docker image by [@sath89](https://hub.docker.com/r/sath89/oracle-xe-11g/).
 
+## [Schema](COMPETITIONS_SCHEMA.md)
+
 ## Install
 
 ### Via Docker
